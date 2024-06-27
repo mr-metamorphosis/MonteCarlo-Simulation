@@ -6,10 +6,12 @@ Practical Steps in Monte Carlo Simulation
 3. Transform to Correlated Variables: Multiply LL by ZZ to obtain the correlated random variables. The resulting vector X=LZX=LZ will have the desired covariance structure ΣΣ.
 Example in Finance
 In financial applications, such as pricing derivatives or risk management, assets often exhibit correlated movements. For instance, the returns of different stocks might be correlated. To simulate the joint distribution of these returns, Cholesky decomposition is used:
-● Suppose you have a covariance matrix ΣΣ representing the covariances between the returns of several assets.
-● Perform Cholesky decomposition on ΣΣ to get LL.
-● Generate independent standard normal random variables.
-● Multiply these by LL to get correlated normal variables representing the simulated returns.
+
+<li> ● Suppose you have a covariance matrix ΣΣ representing the covariances between the returns of several assets. </li>
+<li> ● Perform Cholesky decomposition on ΣΣ to get LL. </li>
+<li>● Generate independent standard normal random variables.</li>
+<li> ● Multiply these by LL to get correlated normal variables representing the simulated returns.</li>
+
 This allows you to simulate scenarios that more accurately reflect the real-world correlations between different assets or risk factors.
 Using Cholesky Decomposition
 Cholesky decomposition is used in Monte Carlo simulations primarily for generating correlated random variables. Here are the key reasons:
